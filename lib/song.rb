@@ -45,6 +45,12 @@ class Song
 
   end
 
+  def self.alphabetical
+
+    self.all.sort_by!{|m| m.group.name.downcase}
+
+  end
+
 end
 
 song_1 = Song.find_or_create_by_name("Sometimes")
