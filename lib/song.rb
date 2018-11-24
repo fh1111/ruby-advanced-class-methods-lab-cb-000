@@ -47,11 +47,16 @@ class Song
 
   def self.alphabetical
 
-    ordered = self.all.sort_by!{|m| m.group.name.downcase}
+    allitems = self.all
+    puts "#{allitems}"
+    ordered = allitems.sort_by!{|m| m.group.name.downcase}
 
   end
 
 end
 
-song_1 = Song.find_or_create_by_name("Sometimes")
-song_2 = Song.find_or_create_by_name("Sometimes")
+song_1 = Song.create_by_name("Thriller")
+song_2 = Song.create_by_name("Blank Space")
+song_3 = Song.create_by_name("Call Me Maybe")
+
+Song.alphabetical
