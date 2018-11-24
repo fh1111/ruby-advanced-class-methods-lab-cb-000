@@ -49,7 +49,7 @@ class Song
 
     names = []
     i = 0
-    self.all.each do |song| names[0] = song.name
+    self.all.each do |song| names[i] = song.name
       i+=1
     end
     puts "#{names}"
