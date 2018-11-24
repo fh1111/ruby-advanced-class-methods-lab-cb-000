@@ -53,8 +53,8 @@ class Song
       i+=1
     end
     puts "#{names}"
-    names.sort
-    puts "#{names}"
+
+    puts "#{names.sort}"
     #ordered = allitems.sort_by!{|m| m.group.name.downcase}
 
   end
