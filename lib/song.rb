@@ -49,7 +49,7 @@ class Song
 
     allitems = self.all
     puts "#{allitems}"
-    ordered = allitems.sort_by!{|m| m.group.name.downcase}
+    #ordered = allitems.sort_by!{|m| m.group.name.downcase}
 
   end
 
