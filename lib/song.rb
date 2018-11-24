@@ -48,7 +48,9 @@ class Song
   def self.alphabetical
 
     names = []
-    self.all.each do |song| names = song.name
+    i = [0]
+    self.all.each do |song| names[0] = song.name
+      i+=1
     end
     puts "#{names}"
     #ordered = allitems.sort_by!{|m| m.group.name.downcase}
