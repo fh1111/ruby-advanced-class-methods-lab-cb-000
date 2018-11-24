@@ -48,7 +48,7 @@ class Song
   def self.alphabetical
 
     allitems = self.all
-    puts "#{allitems}"
+    puts "#{allitems.name}"
     #ordered = allitems.sort_by!{|m| m.group.name.downcase}
 
   end
