@@ -36,7 +36,7 @@ class Song
 
   def self.find_or_create_by_name(songName)
     foundSong = self.find_by_name(songName)
-    puts "#{foundSong}"
+    #puts "#{foundSong}"
     if ( foundSong == nil)
       self.create_by_name(songName)
     else
