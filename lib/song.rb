@@ -40,7 +40,7 @@ class Song
     if ( foundSong == nil)
       self.create_by_name(songName)
     else
-      return nil
+      return foundSong
     end
 
   end
