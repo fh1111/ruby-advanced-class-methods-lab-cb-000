@@ -49,6 +49,7 @@ class Song
 
     names = []
     self.all.each do |song| names = song.names
+    end
     puts "#{names}"
     #ordered = allitems.sort_by!{|m| m.group.name.downcase}
 
