@@ -57,6 +57,8 @@ class Song
     song.name =  songName
     song.artist_name =  songName
 
+    puts "#{song.name} + {song.artist_name}"
+
   end
 
 
