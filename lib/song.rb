@@ -56,6 +56,7 @@ class Song
     song = self.new
     song.name =  songName
     song.artist_name =  artistName
+    @@all << song
     song
 
     #puts "|#{song.name}|#{song.artist_name}|"
