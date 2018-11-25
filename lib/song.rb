@@ -53,8 +53,9 @@ class Song
       i+=1
     end
 
-    #ordered = allitems.sort_by!{|m| m.group.name.downcase}
-    return names.sort
+    
+
+    return self.all.sort
   end
 
 end
