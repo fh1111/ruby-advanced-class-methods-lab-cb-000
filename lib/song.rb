@@ -46,15 +46,6 @@ class Song
   end
 
   def self.alphabetical
-
-    names = []
-    i = 0
-    self.all.each do |song| names[i] = song.name
-      i+=1
-    end
-
-
-
     return self.all.sort_by {|obj| obj.name}
   end
 
