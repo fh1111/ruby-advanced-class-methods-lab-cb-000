@@ -49,7 +49,16 @@ class Song
     return self.all.sort_by {|obj| obj.name}
   end
 
+  def self.new_from_filename(fileName)
+    songName = fileName.split("-")[0]
+    artistName = fileName.split("-")[1].split(".")
+
+  end
+
+
 end
+
+
 
 song_1 = Song.create_by_name("Thriller")
 song_2 = Song.create_by_name("Blank Space")
