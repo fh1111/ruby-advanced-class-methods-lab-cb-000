@@ -55,7 +55,7 @@ class Song
 
     song = self.new
     song.name =  songName
-    song.artist_name =  songName
+    song.artist_name =  artistName
 
     puts "#{song.name}+#{song.artist_name}"
 
