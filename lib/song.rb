@@ -61,4 +61,4 @@ class Song
 end
 
 
-song = Song.create_from_filename("Thundercat - For Love I Come.mp3")
+song = Song.new_from_filename("Thundercat - For Love I Come.mp3")
