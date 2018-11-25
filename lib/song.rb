@@ -53,15 +53,12 @@ class Song
     songName = fileName.split("-")[0]
     artistName = fileName.split("-")[1].split(".")
 
+    puts "#{songName} + #{artistName}"
+
   end
 
 
 end
 
 
-
-song_1 = Song.create_by_name("Thriller")
-song_2 = Song.create_by_name("Blank Space")
-song_3 = Song.create_by_name("Call Me Maybe")
-
-Song.alphabetical
+song = Song.create_from_filename("Thundercat - For Love I Come.mp3")
