@@ -53,9 +53,9 @@ class Song
       i+=1
     end
 
-    
 
-    return self.all.sort
+
+    return self.all.sort_by {|obj| obj.name}
   end
 
 end
